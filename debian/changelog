@@ -1,0 +1,544 @@
+python-os-brick (5.0.3-0ubuntu1~cloud1) focal-xena; urgency=medium
+
+  * SECURITY REGRESSION: Regressions in other projects (LP: #2020111)
+    - debian/patches/series: Do not apply CVE-2023-2088.patch until
+      patches are ready for all upstream OpenStack projects.
+    - CVE-2023-2088
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Thu, 18 May 2023 12:00:56 -0400
+
+python-os-brick (5.0.3-0ubuntu1~cloud0) focal-xena; urgency=medium
+
+  * New stable point release for OpenStack Xena (LP: #2018564).
+  * SECURITY UPDATE: Unauthorized File Access
+    - debian/patches/CVE-2023-2088.patch: Support force disconnect for
+      fibre channel.
+    - CVE-2023-2088
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Fri, 05 May 2023 11:59:14 +0200
+
+python-os-brick (5.0.2-0ubuntu1~cloud0) focal-xena; urgency=medium
+
+  * New upstream release for the Ubuntu Cloud Archive.
+
+ -- Openstack Ubuntu Testing Bot <openstack-testing-bot@ubuntu.com>  Tue, 05 Jul 2022 22:35:42 +0000
+
+python-os-brick (5.0.2-0ubuntu1) impish; urgency=medium
+
+  * d/gbp.conf: Create stable/xena branch.
+  * New stable point release for OpenStack Xena (LP: #1978465).
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Tue, 14 Jun 2022 13:14:30 -0400
+
+python-os-brick (5.0.1-0ubuntu1) impish; urgency=medium
+
+  * New upstream release for OpenStack Xena.
+
+ -- Chris MacNaughton <chris.macnaughton@ubuntu.com>  Wed, 06 Oct 2021 13:26:37 +0000
+
+python-os-brick (5.0.0-0ubuntu1) impish; urgency=medium
+
+  * New upstream release for OpenStack Xena.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Tue, 07 Sep 2021 14:06:51 -0400
+
+python-os-brick (4.4.0-0ubuntu1) impish; urgency=medium
+
+  * New upstream release for OpenStack Xena.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Chris MacNaughton <chris.macnaughton@ubuntu.com>  Wed, 09 Jun 2021 07:39:09 +0000
+
+python-os-brick (4.3.1-0ubuntu2) hirsute; urgency=medium
+
+  * d/control: Drop python3-coverage min version as it is not required.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Mon, 12 Apr 2021 13:57:46 -0400
+
+python-os-brick (4.3.1-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release candidate for OpenStack Wallaby.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Chris MacNaughton <chris.macnaughton@ubuntu.com>  Wed, 07 Apr 2021 09:11:55 +0000
+
+python-os-brick (4.2.0-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release for OpenStack Wallaby.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Chris MacNaughton <chris.macnaughton@ubuntu.com>  Tue, 09 Mar 2021 16:25:07 +0000
+
+python-os-brick (4.1.0-0ubuntu1) hirsute; urgency=medium
+
+  * d/control: Update VCS paths for move to lp:~ubuntu-openstack-dev.
+  * New upstream release for OpenStack Wallaby.
+
+ -- Chris MacNaughton <chris.macnaughton@ubuntu.com>  Thu, 21 Jan 2021 14:59:42 +0000
+
+python-os-brick (4.0.1-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release for OpenStack Victoria.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Fri, 11 Sep 2020 15:56:21 -0400
+
+python-os-brick (3.2.1-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release for OpenStack Victoria.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Chris MacNaughton <chris.macnaughton@canonical.com>  Thu, 03 Sep 2020 08:08:39 +0000
+
+python-os-brick (3.1.0-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release for OpenStack Victoria.
+  * d/control: Align (Build-)Depends with upstream.
+  * d/control: Bump Standards-Version to 4.5.0.
+  * d/control: Update debhelper-compat to 12.
+  * d/rules: Update to use pybuild.
+  * d/control: Restrict versions to Groovy.
+
+ -- Chris MacNaughton <chris.macnaughton@canonical.com>  Fri, 12 Jun 2020 10:24:34 +0000
+
+python-os-brick (3.0.1-0ubuntu1) focal; urgency=medium
+
+  * New upstream release for OpenStack Ussuri.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Thu, 09 Apr 2020 14:26:45 -0400
+
+python-os-brick (3.0.0-0ubuntu1) focal; urgency=medium
+
+  * New upstream release for OpenStack Ussuri.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Thu, 12 Mar 2020 10:10:00 -0400
+
+python-os-brick (2.11.0-0ubuntu1) focal; urgency=low
+
+  * Merge from Debian unstable.  Remaining changes:
+    - d/gbp.conf: Retain for pristine-tar.
+    - d/watch: Get tarball from tarballs.openstack.org.
+    - d/control: Enable autopkgtest-pkg-python testsuite.
+    - d/control: Drop BD's on python-* packages.
+  * d/p/removes-privacy-breach-in-docs.patch: Rebased.
+  * New upstream release for OpenStack Ussuri.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Sahid Orentino Ferdjaoui <sahid.ferdjaoui@canonical.com>  Mon, 03 Feb 2020 10:26:01 +0000
+
+python-os-brick (2.10.0-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Thomas Goirand ]
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 21 Oct 2019 09:47:00 +0200
+
+python-os-brick (2.10.0-1) experimental; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+
+  [ Thomas Goirand ]
+  * New upstream release.
+  * Rebased removes-privacy-breach-in-docs.patch.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 18 Sep 2019 09:21:14 +0200
+
+python-os-brick (2.10.0-0ubuntu1) eoan; urgency=medium
+
+  * New upstream release for OpenStack Train.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Wed, 25 Sep 2019 14:18:29 -0400
+
+python-os-brick (2.9.1-0ubuntu3) eoan; urgency=medium
+
+  * d/rules: Ensure sphinx is built with python3.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Fri, 16 Aug 2019 09:43:28 -0400
+
+python-os-brick (2.9.1-0ubuntu2) eoan; urgency=medium
+
+  * d/control: Ensure reno min version aligns with Train.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Thu, 15 Aug 2019 15:19:11 -0400
+
+python-os-brick (2.9.1-0ubuntu1) eoan; urgency=medium
+
+  * New upstream release for OpenStack Train.
+  * d/control: Align (Build-)Depends with upstream.
+  * d/p/removes-privacy-breach-in-docs.patch: Rebased.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Tue, 30 Jul 2019 15:34:31 -0400
+
+python-os-brick (2.8.1-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 16 Jul 2019 22:03:57 +0200
+
+python-os-brick (2.8.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Removed Python 2 support.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 26 Mar 2019 17:03:48 +0100
+
+python-os-brick (2.8.1-0ubuntu2) eoan; urgency=medium
+
+  * d/control: Drop BDI's on python-* packages.
+  * d/control: Drop python-os-brick binary package.
+  * d/rules: Tweak to stop build and install of Python 2 parts.
+
+ -- Sahid Orentino Ferdjaoui <sahid.ferdjaoui@canonical.com>  Thu, 11 Jul 2019 10:58:49 +0200
+
+python-os-brick (2.8.1-0ubuntu1) disco; urgency=medium
+
+  * New upstream point release for OpenStack Stein.
+
+ -- James Page <james.page@ubuntu.com>  Fri, 22 Mar 2019 14:10:23 +0000
+
+python-os-brick (2.8.0-0ubuntu1) disco; urgency=medium
+
+  * New upstream release for OpenStack Stein.
+
+ -- James Page <james.page@ubuntu.com>  Tue, 12 Mar 2019 09:39:48 +0000
+
+python-os-brick (2.7.0-0ubuntu1) disco; urgency=medium
+
+  * New upstream release for OpenStack Stein.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Wed, 30 Jan 2019 13:24:14 -0500
+
+python-os-brick (2.6.1-0ubuntu1) disco; urgency=medium
+
+  * New upstream release for OpenStack Stein.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Tue, 20 Nov 2018 10:34:42 -0500
+
+python-os-brick (2.5.5-1) unstable; urgency=medium
+
+  * New upstream point release.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 01 Feb 2019 14:31:55 +0100
+
+python-os-brick (2.5.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 16 Jan 2019 23:10:27 +0100
+
+python-os-brick (2.5.3-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 04 Sep 2018 23:19:21 +0200
+
+python-os-brick (2.5.3-1) experimental; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Add trailing tilde to min version depend to allow
+    backports
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+
+  [ Thomas Goirand ]
+  * New upstream release.
+  * Fixed (build-)depends for this release.
+  * Using Python 3 for building sphinx doc.
+  * Rebased removes-privacy-breach-in-docs.patch.
+  * Added a few <!nocheck> in debian/control.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 22 Aug 2018 16:57:59 +0200
+
+python-os-brick (2.5.3-0ubuntu1) cosmic; urgency=medium
+
+  * New upstream release for OpenStack Rocky.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Thu, 02 Aug 2018 13:27:16 -0400
+
+python-os-brick (2.5.0-0ubuntu1) cosmic; urgency=medium
+
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+  * d/p/removes-privacy-breach-in-docs.patch: Rebased.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Tue, 12 Jun 2018 11:58:24 -0400
+
+python-os-brick (2.4.0-0ubuntu1) cosmic; urgency=medium
+
+  * Merged from Debian unstable.  Remaining changes:
+    - d/gbp.conf: Retain for pristine-tar.
+    - d/watch: Get tarball from tarballs.openstack.org.
+    - d/control: Enable autopkgtest-pkg-python testsuite.
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+  * d/control: Update Standards-Version to 4.1.4.
+  * d/watch: Use https URL.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Wed, 16 May 2018 17:26:40 -0400
+
+python-os-brick (2.3.0-3) unstable; urgency=medium
+
+  * Blacklist 2 timeout tests which don't seem deterministic.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 26 Feb 2018 23:41:52 +0000
+
+python-os-brick (2.3.0-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 25 Feb 2018 22:56:33 +0000
+
+python-os-brick (2.3.0-1) experimental; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Thomas Goirand ]
+  * New upstream release.
+  * Fixed (build-)depends for this release.
+  * Standards-Version is now 4.1.3.
+  * Use github tag over HTTPS for watch file.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 14 Feb 2018 08:50:24 +0000
+
+python-os-brick (2.3.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- James Page <james.page@ubuntu.com>  Fri, 26 Jan 2018 11:29:48 +0000
+
+python-os-brick (2.1.1-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+  * d/*: wrap-and-sort -bast.
+  * d/control: Bumped Standards-Version to 4.1.2.
+  * d/p/*: Refresh.
+  * d/test-blacklist.txt: Blacklist racey test on busy systems.
+
+ -- James Page <james.page@ubuntu.com>  Fri, 08 Dec 2017 21:18:30 +0000
+
+python-os-brick (1.15.3-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 02 Nov 2017 01:13:13 +0000
+
+python-os-brick (1.15.3-1) experimental; urgency=medium
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Running wrap-and-sort -bast.
+  * Updating maintainer field.
+  * Updating standards version to 4.0.0.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+  * Updating standards version to 4.0.1.
+  * Updating standards version to 4.1.0.
+
+  [ Thomas Goirand ]
+  * New upstream release.
+  * Fixed (build-)depends for this release.
+  * Using pkgos-dh_auto_{install,test}.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 08 Oct 2017 23:21:45 +0200
+
+python-os-brick (1.15.2-0ubuntu1) artful; urgency=medium
+
+  * d/watch: Get tarball from tarballs.openstack.org.
+  * New upstream release.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Wed, 16 Aug 2017 10:21:27 -0400
+
+python-os-brick (1.15.1-0ubuntu2) artful; urgency=medium
+
+  * d/control: Set min python-requests to 2.14.2.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Thu, 03 Aug 2017 16:19:07 -0400
+
+python-os-brick (1.15.1-0ubuntu1) artful; urgency=medium
+
+  * New upstream release.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Fri, 28 Jul 2017 12:25:03 -0400
+
+python-os-brick (1.13.1-0ubuntu1) artful; urgency=medium
+
+  * d/p/rbd-params.patch: Dropped, included upstream.
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+  * d/rules,test-blacklist.txt: Switch to using ostestr for unit test
+    execution, blacklist failing test under py3.
+
+ -- James Page <james.page@ubuntu.com>  Fri, 02 Jun 2017 09:26:25 +0100
+
+python-os-brick (1.12.0-0ubuntu1) artful; urgency=medium
+
+  * New upstream release.
+  * d/p/rbd-params.patch: Pick fix to ensure that cinder identity
+    information is used with rbd local attachment (LP: #1680072).
+  * d/p/*: Refresh.
+  * Align (Build-)Depends with upstream milestone.
+
+ -- James Page <james.page@ubuntu.com>  Thu, 27 Apr 2017 10:01:34 +0100
+
+python-os-brick (1.11.0-0ubuntu1) zesty; urgency=medium
+
+  * New upstream release. 
+  * debian/control: Bump version dependencies
+
+ -- Chuck Short <zulcss@ubuntu.com>  Wed, 25 Jan 2017 09:20:47 -0500
+
+python-os-brick (1.10.0-0ubuntu1) zesty; urgency=medium
+
+  *  New upstream release.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Fri, 20 Jan 2017 09:53:50 -0500
+
+python-os-brick (1.9.0-0ubuntu1) zesty; urgency=medium
+
+  * New upstream version.
+  * debian/control: Bump version dependencies
+
+ -- Chuck Short <zulcss@ubuntu.com>  Wed, 18 Jan 2017 07:39:53 -0500
+
+python-os-brick (1.8.0-0ubuntu1) zesty; urgency=medium
+
+  * New upstream version. 
+  * debian/control: Bump version dependencies.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Fri, 11 Nov 2016 08:42:54 -0500
+
+python-os-brick (1.7.0-0ubuntu2) zesty; urgency=medium
+
+  * debian/tests: Add autopkgtest 
+
+ -- Chuck Short <zulcss@ubuntu.com>  Thu, 03 Nov 2016 09:34:12 -0400
+
+python-os-brick (1.7.0-0ubuntu1) zesty; urgency=medium
+
+  [ Corey Bryant ]
+  * d/gbp.conf: Update gbp configuration file.
+  * d/control: Update Vcs-* links and maintainers.
+
+  [ Chuck Short ]
+  * New upstream version.
+  * debian/control: Bump version dependencies
+
+ -- Chuck Short <zulcss@ubuntu.com>  Tue, 01 Nov 2016 13:43:16 -0400
+
+python-os-brick (1.6.1-0ubuntu1) yakkety; urgency=medium
+
+  [ Corey Bryant ]
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+
+  [ Corey Bryant ]
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+
+ -- Corey Bryant <corey.bryant@canonical.com>  Fri, 02 Sep 2016 10:00:32 -0400
+
+python-os-brick (1.3.0-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 06 Jun 2016 14:38:19 +0000
+
+python-os-brick (1.2.0-4) unstable; urgency=medium
+
+  * Really add open-iscsi to solve live migration issues.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 03 Jun 2016 13:44:41 +0000
+
+python-os-brick (1.2.0-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Standards-Version is 3.9.8 now (no change)
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * d/copyright: Changed source URL to https protocol
+
+  [ Thomas Goirand ]
+  * Add open-iscsi to solve live migration issues (LP: #1588799).
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 03 Jun 2016 15:40:05 +0200
+
+python-os-brick (1.2.0-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 04 Apr 2016 20:09:12 +0000
+
+python-os-brick (1.2.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Fixed version of python{3,}-oslo.concurrency for this release.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 04 Apr 2016 09:19:50 +0200
+
+python-os-brick (1.1.0-1) experimental; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed homepage (https).
+  * Fixed VCS URLs (https).
+
+  [ Corey Bryant ]
+  * New upstream release.
+  * d/control: Align (Build-)Depends with upstream.
+  * d/p/drop-reno-sphinxext.patch: Drop reno-sphinxext from sphinx config.
+
+  [ Thomas Goirand ]
+  * Standards-Version: 3.9.7 (no change).
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 03 Mar 2016 18:06:03 +0000
+
+python-os-brick (0.7.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Fixed (build-)depends for this release.
+  * Testing with all Python versions.
+  * Fixed debian/copyright ordering.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 18 Jan 2016 12:22:45 +0000
+
+python-os-brick (0.5.0-2) unstable; urgency=medium
+
+  [ James Page ]
+  * d/rules: Drop use of -S flag with dpkg-parsechangelog to ease backports.
+
+  [ Thomas Goirand ]
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 16 Oct 2015 10:11:23 +0000
+
+python-os-brick (0.5.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Fixed (build-)depends for this release.
+  * Added a new os-brick-common package, which is needed to hold the rootwrap
+    configuration file for both python{3,}-os-brick packages.
+  * Added -doc privacy breanch fix.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 24 Sep 2015 16:07:58 +0200
+
+python-os-brick (0.3.2-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 30 Jul 2015 14:26:34 +0000
+
+python-os-brick (0.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #789601).
+
+ -- James Page <james.page@ubuntu.com>  Mon, 22 Jun 2015 14:29:41 +0100
+
