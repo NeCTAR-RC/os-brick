@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=os-brick
+
+UPSTREAM_GIT := https://github.com/openstack/os-brick.git
+include /usr/share/openstack-pkg-tools/pkgos.make
+
+%:
+	dh $@ --buildsystem=pybuild --with python3,sphinxdoc
+
+override_dh_auto_clean:
+	rm -rf build
+
+override_dh_auto_build:
+	echo "Do nothing..."
+
+override_dh_auto_install:
+	pkgos-dh_auto_install --no-py2
+	rm -rf $(CURDIR)/debian/python*-os-brick/usr/etc
+	install -D -m 0644 etc/os-brick/rootwrap.d/os-brick.filters $(CURDIR)/debian/os-brick-common/etc/os-brick/rootwrap.d/os-brick.filters
+
+override_dh_auto_test:
+ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	pkgos-dh_auto_test --no-py2 'os_brick\.tests\.(?!(.*privileged\.test_rootwrap\.PrivRootwrapTestCase\.test_custom_execute_timeout_no_raise.*|.*privileged\.test_rootwrap\.PrivRootwrapTestCase\.test_custom_execute_timeout_raises_with_retries.*))'
+endif
+
+override_dh_sphinxdoc:
+ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
+	PYTHONPATH=. python3 -m sphinx -b html doc/source debian/python-os-brick-doc/usr/share/doc/python-os-brick-doc/html
+	dh_sphinxdoc -O--buildsystem=pybuild
+endif
